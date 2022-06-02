@@ -66,7 +66,11 @@
             <a href="#pricing" class="btn btn-secondary btn-lg">Buy Now</a>
           </div>
           <div class="col-md-5 text-center d-none d-md-block">
-            <img src="/images/imgbin-timpani-drum-percussion-playing-dish-P8zhnNKc00kK0vimkewUS0wHf.jpg" class="img-fluid" alt="ebook">
+            <!--tooltip-->
+            <span class="tt" data-bs-placement="bottom" title="Drum set image">
+              <img class="img-fluid" src="/images/imgbin-timpani-drum-percussion-playing-dish-P8zhnNKc00kK0vimkewUS0wHf.jpg" class="img-fluid" alt="ebook">
+            </span>
+            
           </div>
         </div>
       </div>
@@ -301,6 +305,12 @@
                   <i class="bi bi-envelope-fill"></i>
                 </span>
                 <input type="email" class="form-control" id="email" placeholder="e.g. khendricks@example.com">
+                <!-- tooltip -->
+                <span class="input-group-text">
+                  <span class="tt" data-bs-placement="bottom" title="Enter an email address we can reply to.">
+                    <i class="bi bi-question-circle text-muted"></i>
+                  </span>
+                </span>
               </div>
               
               
@@ -310,6 +320,12 @@
                   <i class="bi bi-file-person-fill"></i>
                 </span>
                 <input type="text" class="form-control" id="name", placeholder="e.g. Keith">
+                <!-- tooltip -->
+                <span class="input-group-text">
+                  <span class="tt" data-bs-placement="bottom" title="Please enter your name">
+                    <i class="bi bi-question-circle text-muted"></i>
+                  </span>
+                </span>
               </div>
               
             
@@ -345,5 +361,14 @@
   
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    
+    <!-- the example of this script is copied from bootstrap but it was customized in the video -->
+    <script>
+      const tooltipTriggerList = document.querySelectorAll('.tt')
+      tooltips.forEach(t => {
+        new bootstrap.Tooltip(t)
+      })
+    </script>
+  
   </body>
   </html>
